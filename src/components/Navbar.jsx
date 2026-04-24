@@ -7,14 +7,17 @@ const Navbar = () => {
       <Link href="/" className="text-xl font-bold">
         NST
       </Link>
-      <div className="flex gap-2">
-        <Link href="/" variant="light" size="sm">
-          Home
-        </Link>
+      <div className="flex gap-5">
         <Link href="/signup" variant="light" size="sm">
           Sign Up
         </Link>
+        <Link href="/signin" variant="light" size="sm">
+          Sign In
+        </Link>
       </div>
+      <Button variant='danger'>
+        SignOut
+      </Button>
     </nav>
   );
 };
